@@ -69,8 +69,8 @@
     }
     .gallery img
     {
-        width: 240px;
-        height: 180px;
+        width: 720px;
+        height: 480px;
         filter: grayscale(100%);
         transition: 1s;
     }
@@ -82,10 +82,6 @@
     }
      .batas{
       padding: 24px;
-    }
-
-    .batas2{
-      padding-top: 48px;
     }
   </style>
 
@@ -105,7 +101,7 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="download.php">Download</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link disabled" href="gallery.php">Gallery</a>
             </li>
             <li class="nav-item">
@@ -114,7 +110,7 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="hubungi.php">Hubungi Kami</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link disabled" href="faq.php">FAQ</a>
             </li>
           </ul>
@@ -131,30 +127,76 @@
   </div>
   <div class="row" style="height: auto;">
     <div class="col-md-3 col-xs-12" style="padding-left: 36px;">
-      <ul class="list-group green position-fixed">
-        <li class="list-group-item list-group-item-action"><a href="#satu">1. Apa Itu Salam</a></li>
-        <li class="list-group-item list-group-item-action"><a href="#dua">2. Cara Menggunakan Salam</a></li>
-        <li class="list-group-item list-group-item-action"><a href="#tiga">3. Fitur Salam</a></li>
+      <ul class="list-group green">
+        <li class="list-group-item"><div class="input-group rounded" style="box-shadow: 0px 12px 6px -6px #d6d6d6;">
+            <input class="form-control input-lg py-2 border-right-0 border" type="search" placeholder="Search" id="example-search-input">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                    <img style="height: 24px; width: 24px; "src="assets/img/search.png">
+              </button>
+            </span>
+          </div></li>
+        <li class="list-group-item list-group-item-action list-group-item-success">terbaru</li>
+        <li class="list-group-item list-group-item-action">1 minggu lalu</li>
+        <li class="list-group-item list-group-item-action">1 bulan lalu</li>
       </ul>
     </div>
-    <div class="col-md-9 col-xs-12 bg-white">
-      <div class="batas border-bottom">
-        <h3 class="green">FAQ</h3>
+    <div class="col-md-8 col-xs-12 bg-white border" style="height: auto; padding: 24px;">
+      <div class="row border-bottom" style="padding: 10px;">
+        <div class="col-md-3 col-xs-12">
+          <h3 class="green">Berita Terkini</h3>
+        </div>
       </div>
-      <div class="batas">
-        <h4 class="green">Q: Apa Itu Salam?</h4>
-        <h4 class="green">A:</h4>
-        <p id="satu">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="border-bottom" style="padding-top: 24px;">
+        <h6 class="green">kemarin</h6>
       </div>
-       <div class="batas">
-        <h4 class="green">Q: Cara Menggunakan Salam?</h4>
-        <h4 class="green">A:</h4>
-        <p id="dua">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="row" style="padding: 24px;">
+          <div class='col-md-10 col-xs-12 batas border-bottom'>
+            <div class="thumbnail gallery">
+              <a href="gallery-detail.php">
+              <img alt="" src="http://placehold.it/720x480" />
+              <div class="">
+                <h5 class="text">Aparat Kepolisian Siap Amankan Wisuda UIN Bandung</h5>
+              </div>
+              </a>
+              <p>BANDUNG, (PRFM) - Polsekta Panyileukan sudah menyiapkan anggotanya untuk melakukan pengamanan acara wisuda di Kampus Universitas Islam Negeri (UIN) Sunan Gunung Djati, Bandung, yang akan dilaksanakan Minggu (21/1/2018) besok.</p>
+              <div class="offset-md-8 col-md-4 col-xs-12">
+                <p>posted: 15 Februari 2019</p>
+              </div>
+            </div>
+          </div>
+      </div><div class="border-bottom" style="padding-top: 24px;">
+        <h6 class="green">1 minggu lalu</h6>
       </div>
-       <div class="batas">
-        <h4 class="green">Q: Apa Saja Fitur dari Salam?</h4>
-        <h4 class="green">A:</h4>
-        <p  id="tiga">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="row" style="padding: 24px;">
+          <div class='col-md-10 col-xs-12 batas border-bottom'>
+            <div class="thumbnail gallery">
+              <a href="gallery-detail.php">
+              <img alt="" src="http://placehold.it/720x480" />
+              <div class="">
+                <h5 class="text">Aparat Kepolisian Siap Amankan Wisuda UIN Bandung</h5>
+              </div>
+              </a>
+              <p>BANDUNG, (PRFM) - Polsekta Panyileukan sudah menyiapkan anggotanya untuk melakukan pengamanan acara wisuda di Kampus Universitas Islam Negeri (UIN) Sunan Gunung Djati, Bandung, yang akan dilaksanakan Minggu (21/1/2018) besok.</p>
+              <div class="offset-md-8 col-md-4 col-xs-12">
+                <p>posted: 15 Februari 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-10 col-xs-12 batas border-bottom'>
+            <div class="thumbnail gallery">
+              <a href="gallery-detail.php">
+              <img alt="" src="http://placehold.it/720x480" />
+              <div class="">
+                <h5 class="text">Aparat Kepolisian Siap Amankan Wisuda UIN Bandung</h5>
+              </div>
+              </a>
+              <p>BANDUNG, (PRFM) - Polsekta Panyileukan sudah menyiapkan anggotanya untuk melakukan pengamanan acara wisuda di Kampus Universitas Islam Negeri (UIN) Sunan Gunung Djati, Bandung, yang akan dilaksanakan Minggu (21/1/2018) besok.</p>
+              <div class="offset-md-8 col-md-4 col-xs-12">
+                <p>posted: 15 Februari 2019</p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
