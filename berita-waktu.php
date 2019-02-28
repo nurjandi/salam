@@ -101,10 +101,10 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="download.php">Download</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link disabled" href="gallery.php">Gallery</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link disabled" href="berita.php">Berita & Pengumuman</a>
             </li>
             <li class="nav-item">
